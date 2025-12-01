@@ -155,31 +155,6 @@ doxygen Doxyfile
 
 ---
 
-## 🌐 Project Website (Coming Next)
-
-This project will be published as an interactive technical website demonstrating:
-- Architecture diagrams  
-- API documentation  
-- Code walkthrough  
-- Live animations of I²C/UART sequences  
-
-This helps recruiters instantly understand your engineering capabilities.
-
----
-
-## 🚀 What’s Next?
-
-We will now begin writing the actual driver code:  
-- `uart.c`  
-- `i2c.c`  
-- HAL layers  
-- `main.c`  
-- Doxygen documentation  
-
-Just say **“Start writing the code”** or **“Begin with UART driver”**.
-
----
-
 ## 🏃 How This Project Works
 
 This project is designed to behave like real embedded firmware **without requiring any physical hardware**.  
