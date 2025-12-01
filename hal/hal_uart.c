@@ -15,6 +15,7 @@
 
 #include "hal_uart.h"
 #include "board.h"
+#include "stdio.h"
 
 /* -------------------------------------------------------------------------- */
 /*                      Simulated Peripheral Register Instance                 */
@@ -80,8 +81,8 @@ void HAL_UART_SetStopBits(uint32_t stop_bits)
 void HAL_UART_SendByte(uint8_t byte)
 {
     UART1.DATA = byte;
-
-    /* Simulate TX complete */
+    putchar(byte);
+    fflush(stdout);
     UART1.STATUS |= UART_STATUS_TX_READY;
 }
 

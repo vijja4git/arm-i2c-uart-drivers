@@ -1,5 +1,3 @@
-
-
 # ARM I²C & UART Driver Library (C11)
 
 This project is a production-style embedded firmware library implementing **I²C** and **UART** communication drivers for **ARM Cortex‑M** microcontrollers using **pure C11** and a simplified CMSIS-like hardware abstraction layer.  
@@ -27,6 +25,8 @@ arm-drivers/
 ├── include/
 │   ├── hal_i2c.h
 │   ├── hal_uart.h
+│   ├── hal_i2c.c
+│   ├── hal_uart.c
 │   └── board.h
 ├── src/
 │   └── main.c
@@ -177,3 +177,98 @@ We will now begin writing the actual driver code:
 - Doxygen documentation  
 
 Just say **“Start writing the code”** or **“Begin with UART driver”**.
+
+---
+
+## 🏃 How This Project Works
+
+This project is designed to behave like real embedded firmware **without requiring any physical hardware**.  
+All peripheral registers (UART and I²C) are **simulated in software**, allowing the entire driver stack to run on a PC.
+
+### 🔌 Hardware Simulation
+The HAL layer (`hal_uart.c`, `hal_i2c.c`) simulates:
+- UART TX/RX registers  
+- I²C start/stop, ACK/NACK  
+- Address match flag  
+- Data register behavior  
+- Sensor data response  
+
+This means the drivers (`uart.c` and `i2c.c`) behave exactly as they would on a Cortex‑M MCU, but the logic executes on your computer.
+
+### 📦 What Actually Happens
+1. **main.c** initializes UART and I²C  
+2. A fake I²C sensor value (`0x33`) is returned  
+3. UART prints the formatted output using `putchar()`  
+4. The whole loop runs 10 times and exits  
+
+This produces console output identical to embedded UART logs.
+
+---
+
+## ▶️ How to Build & Run
+
+### **1. Build the main firmware simulation**
+Run:
+```
+make
+```
+
+This generates:
+```
+build/main
+```
+
+### **2. Run it**
+```
+./build/main
+```
+
+Expected output:
+```
+System Booting...
+UART Initialized.
+I2C Initialized.
+System Ready.
+Reading temperature sensor...
+Sensor Value (Hex): 0x33
+Loop iteration complete.
+...
+```
+
+---
+
+## 🧪 How to Run Unit Tests
+
+Use:
+```
+make test
+```
+
+This builds and executes:
+```
+build/tests
+```
+
+Expected test results:
+```
+[UART] Read/Write test passed.
+[I2C] Write test passed.
+[I2C] Read test passed.
+All tests passed successfully.
+```
+
+This confirms the I²C and UART drivers work even without real hardware.
+
+---
+
+## 🎯 Summary
+
+This project shows:
+- Professional embedded driver design  
+- HAL abstraction for portability  
+- Software-simulated peripherals  
+- Testable firmware architecture  
+- Clean build system (Makefile)  
+- No hardware required to demonstrate skills  
+
+Perfect for showcasing embedded engineering capabilities on GitHub.

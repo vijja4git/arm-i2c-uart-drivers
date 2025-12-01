@@ -1,5 +1,3 @@
-
-
 /**
  * @file main.c
  * @brief Example application demonstrating UART + I2C driver usage.
@@ -21,6 +19,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 /* -------------------------------------------------------------------------- */
 /*                         Fake Sensor Register Address                        */
@@ -82,6 +81,7 @@ static void App_ReadSensor(void)
     UART_WriteString("Sensor Value (Hex): 0x");
     UART_WriteHex(temp_value);
     UART_WriteString("\r\n");
+    fflush(stdout);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -97,10 +97,10 @@ int main(void)
 
     UART_WriteString("System Ready.\r\n");
 
-    while (1)
+    for (int i = 0; i < 10; i++)
     {
         App_ReadSensor();
-        for (volatile int i = 0; i < 1000000; i++); /* Simple delay */
+        UART_WriteString("Loop iteration complete.\r\n");
     }
 
     return 0;

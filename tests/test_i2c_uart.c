@@ -22,8 +22,8 @@
 /*                 Manual Mock Register Instances for Testing                 */
 /* -------------------------------------------------------------------------- */
 
-UART_Registers_t UART1 = {0};
-I2C_Registers_t I2C1 = {0};
+extern UART_Registers_t UART1;
+extern I2C_Registers_t I2C1;
 
 /* -------------------------------------------------------------------------- */
 /*                        Helper Functions for Testing                        */
