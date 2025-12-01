@@ -1,5 +1,8 @@
 # ARM I²C & UART Driver Library (C11)
 
+![CI](https://github.com/vijja4git/arm-i2c-uart-drivers/actions/workflows/ci.yml/badge.svg)
+
+
 This project is a production-style embedded firmware library implementing **I²C** and **UART** communication drivers for **ARM Cortex‑M** microcontrollers using **pure C11** and a simplified CMSIS-like hardware abstraction layer.  
 It is designed as a **portfolio-ready, industry-standard example** of how professional embedded engineers architect low‑level firmware systems.
 
