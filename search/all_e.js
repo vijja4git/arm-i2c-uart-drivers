@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['test_5fi2c_5fuart_20c_20tt_0',['**&lt;tt&gt;test_i2c_uart.c&lt;/tt&gt;**',['../index.html#autotoc_md22',1,'']]],
+  ['test_5fi2c_5fuart_2ec_1',['test_i2c_uart.c',['../test__i2c__uart_8c.html',1,'']]],
+  ['tests_2',['🧪 How to Run Unit Tests',['../index.html#autotoc_md36',1,'']]],
+  ['tests_20host_20machine_20simulation_3',['📂 &lt;tt&gt;tests/&lt;/tt&gt; – Unit Tests (Host-Machine Simulation)',['../index.html#autotoc_md21',1,'']]],
+  ['tests_20tt_20–_20unit_20tests_20host_20machine_20simulation_4',['📂 &lt;tt&gt;tests/&lt;/tt&gt; – Unit Tests (Host-Machine Simulation)',['../index.html#autotoc_md21',1,'']]],
+  ['the_20main_20firmware_20simulation_20strong_5',['&lt;strong&gt;1. Build the main firmware simulation&lt;/strong&gt;',['../index.html#autotoc_md33',1,'']]],
+  ['this_20project_20works_6',['🏃 How This Project Works',['../index.html#autotoc_md28',1,'']]],
+  ['to_20build_20run_7',['▶️ How to Build &amp; Run',['../index.html#autotoc_md32',1,'']]],
+  ['to_20run_20unit_20tests_8',['🧪 How to Run Unit Tests',['../index.html#autotoc_md36',1,'']]],
+  ['tt_20board_20h_20tt_9',['**&lt;tt&gt;board.h&lt;/tt&gt;**',['../index.html#autotoc_md16',1,'']]],
+  ['tt_20drivers_20tt_20–_20low_20level_20peripheral_20drivers_10',['📂 &lt;tt&gt;drivers/&lt;/tt&gt; – Low-Level Peripheral Drivers',['../index.html#autotoc_md4',1,'']]],
+  ['tt_20hal_5fi2c_20h_20tt_11',['**&lt;tt&gt;hal_i2c.h&lt;/tt&gt;**',['../index.html#autotoc_md12',1,'']]],
+  ['tt_20hal_5fuart_20h_20tt_12',['**&lt;tt&gt;hal_uart.h&lt;/tt&gt;**',['../index.html#autotoc_md14',1,'']]],
+  ['tt_20i2c_20c_20tt_13',['**&lt;tt&gt;i2c.c&lt;/tt&gt;**',['../index.html#autotoc_md5',1,'']]],
+  ['tt_20i2c_20h_20tt_14',['**&lt;tt&gt;i2c.h&lt;/tt&gt;**',['../index.html#autotoc_md6',1,'']]],
+  ['tt_20include_20tt_20–_20hardware_20abstraction_20layer_20board_20config_15',['📂 &lt;tt&gt;include/&lt;/tt&gt; – Hardware Abstraction Layer + Board Config',['../index.html#autotoc_md11',1,'']]],
+  ['tt_20main_20c_20tt_16',['**&lt;tt&gt;main.c&lt;/tt&gt;**',['../index.html#autotoc_md19',1,'']]],
+  ['tt_20src_20tt_20–_20application_20layer_17',['📂 &lt;tt&gt;src/&lt;/tt&gt; – Application Layer',['../index.html#autotoc_md18',1,'']]],
+  ['tt_20test_5fi2c_5fuart_20c_20tt_18',['**&lt;tt&gt;test_i2c_uart.c&lt;/tt&gt;**',['../index.html#autotoc_md22',1,'']]],
+  ['tt_20tests_20tt_20–_20unit_20tests_20host_20machine_20simulation_19',['📂 &lt;tt&gt;tests/&lt;/tt&gt; – Unit Tests (Host-Machine Simulation)',['../index.html#autotoc_md21',1,'']]],
+  ['tt_20uart_20c_20tt_20',['**&lt;tt&gt;uart.c&lt;/tt&gt;**',['../index.html#autotoc_md8',1,'']]],
+  ['tt_20uart_20h_20tt_21',['**&lt;tt&gt;uart.h&lt;/tt&gt;**',['../index.html#autotoc_md9',1,'']]]
+];
