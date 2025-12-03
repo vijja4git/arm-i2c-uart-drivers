@@ -97,7 +97,7 @@ int main(void)
 
     UART_WriteString("System Ready.\r\n");
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 5; i++)
     {
         App_ReadSensor();
         UART_WriteString("Loop iteration complete.\r\n");
