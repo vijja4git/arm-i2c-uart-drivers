@@ -95,7 +95,7 @@ int main(void)
     App_InitUART();
     App_InitI2C();
 
-/*   UART_WriteString("System Ready.\r\n");
+    UART_WriteString("System Ready.\r\n");
 
     for (int i = 0; i < 5; i++)
     {
@@ -103,5 +103,5 @@ int main(void)
         UART_WriteString("Loop iteration complete.\r\n");
     }
 
-    return 0;*/
+    return 0;
 }
