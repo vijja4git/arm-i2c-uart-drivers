@@ -100,9 +100,9 @@ $(document).ready(function(){initNavTree('main_8c.html',''); initResizable(); })
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="uart_8h_source.html">../drivers/uart.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">../drivers/i2c.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="board_8h_source.html">../include/board.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hal__uart_8h_source.html">../include/hal_uart.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hal__i2c_8h_source.html">../include/hal_i2c.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="board_8h_source.html">../include/board.h</a>&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
@@ -140,6 +140,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This file contains the main application for demonstrating how UART and I2C drivers work together in a simulated embedded system. Every line is documented to help beginners understand:</p><ul>
+<li>What each function call does</li>
+<li>Where each variable or constant comes from</li>
+<li>How drivers interact with the HAL (Hardware Abstraction Layer)</li>
+<li>How data flows from the application → drivers → HAL → simulated hardware These constants define the I2C address of a simulated temperature sensor. SENSOR_I2C_ADDRESS:<ul>
+<li>0x48 is a common 7‑bit address used by many real temperature sensors. SENSOR_REG_TEMP:</li>
+<li>Register 0x00 typically stores the real-time temperature value. </li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
